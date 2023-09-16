@@ -24,6 +24,8 @@
       ".config/hypr/hyprland.conf".source = dotfiles/hyprland.conf;
       ".config/kitty/kitty.conf".source = dotfiles/kitty.conf;
       ".config/swaylock/config".source = dotfiles/swaylock.conf;
+      ".config/waybar/config.jsonc".source = dotfiles/waybar/config.jsonc;
+      ".config/waybar/style.css".source = dotfiles/waybar/style.css;
       "Wallpapers/space-0.jpg".source = other-files/wallpaper.jpg;
     };
   };

@@ -22,12 +22,15 @@
     tmux wofi
     swaybg
     swaylock-effects
+    waybar
+    font-awesome
     wl-clipboard
     mako
     imv
     mpv
     lsix
     pavucontrol
+    pamixer
     neofetch
     grim
     slurp
