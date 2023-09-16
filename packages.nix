@@ -19,8 +19,7 @@
     firefox
     kitty
     nvtop
-    tmux
-    wofi
+    tmux wofi
     swaybg
     swaylock-effects
     wl-clipboard
@@ -33,5 +32,6 @@
     grim
     slurp
     dig
+    xdg-utils
   ];
 }

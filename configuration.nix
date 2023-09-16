@@ -20,6 +20,7 @@ in
       ./hyprland.nix
       ./gnupg.nix
       ./docker.nix
+      ./ddev.nix
       ./users/nixmage/master.nix
       ./scripts/master.nix
     ];
