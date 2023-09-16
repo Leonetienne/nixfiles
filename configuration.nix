@@ -66,6 +66,7 @@
     description = "nixmage";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
@@ -77,7 +78,58 @@
     neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     curl
     git
+    firefox
+    kitty
+    nvtop
   ];
+
+  # Set up zshell with omz
+  programs.zsh = {
+    enable = true;
+    shellAliases = {
+    	ll = "ls -l";
+    	vi = "nvim";
+	nix-update = "sudo nixos-rebuild switch";
+	gda = "git add --all";
+	gst = "git status";
+	gcm = "git commit -m";
+	gush = "git push";
+	gull = "git pull";
+	glone = "git clone";
+	giff = "git diff";
+	gog = "git log";
+    };
+
+    histSize = 1000000;
+    histFile = "$HOME/zsh/history";
+    ohMyZsh = {
+    	enable = true;
+	plugins = [
+	  "git"
+	];
+	theme = "robbyrussell";
+    };
+  };
+
+  # Set up hyprland
+  programs.hyprland.enable = true;
+
+  # Set up proprietary nvidia drivers
+  hardware.opengl = {
+  	enable = true;
+	driSupport = true;
+	driSupport32Bit = true;
+  };
+
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    open = true;
+    nvidiaSettings = true;
+  };
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
