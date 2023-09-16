@@ -6,7 +6,6 @@
     enable = true;
     shellAliases = {
     	ll = "ls -l";
-    	vi = "nvim";
 	nix-update = "sudo nixos-rebuild switch";
 	gda = "git add --all";
 	gst = "git status";

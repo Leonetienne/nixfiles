@@ -13,8 +13,8 @@
     dracula-theme
     glib
     gsettings-desktop-schemas
-    neovim
     curl
+    vim
     git
     firefox
     kitty
