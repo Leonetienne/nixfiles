@@ -12,8 +12,7 @@
   home-manager.users.nixmage = { pkgs, ... }: {
     imports =
     [ 
-      ./apps/git.nix
-      ./apps/nvim.nix
+      ./packages/master.nix
     ];
 
     home.stateVersion = "23.05";
