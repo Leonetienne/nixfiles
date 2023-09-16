@@ -57,6 +57,15 @@
     xkbVariant = "";
   };
 
+  # Configure audio
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
   # Configure console keymap
   console.keyMap = "de";
 
@@ -81,7 +90,18 @@
     firefox
     kitty
     nvtop
+    tmux
+    rofi
+    swaybg
+    imv
+    mpv
+    lsix
+    pavucontrol
   ];
+
+  environment.sessionVariables = {
+    WLR_NO_HARDWARE_CURSORS = "1";
+  };
 
   # Set up zshell with omz
   programs.zsh = {
