@@ -19,7 +19,8 @@ in
       ./nvidia-drivers.nix
       ./hyprland.nix
       ./gnupg.nix
-      ./users/nixmage/nixmage.nix
+      ./docker.nix
+      ./users/nixmage/master.nix
       ./scripts/master.nix
     ];
 

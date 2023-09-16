@@ -5,8 +5,12 @@
   users.users.nixmage = {
     isNormalUser = true;
     description = "nixmage";
-    extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+    ];
   };
 
   home-manager.users.nixmage = { pkgs, ... }: {
@@ -20,6 +24,7 @@
       ".config/hypr/hyprland.conf".source = dotfiles/hyprland.conf;
       ".config/kitty/kitty.conf".source = dotfiles/kitty.conf;
       ".config/swaylock/config".source = dotfiles/swaylock.conf;
+      "Wallpapers/space-0.jpg".source = other-files/wallpaper.jpg;
     };
   };
 }
