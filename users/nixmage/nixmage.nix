@@ -16,5 +16,14 @@
       ".config/kitty/kitty.conf".source = dotfiles/kitty.conf;
       ".config/swaylock/config".source = dotfiles/swaylock.conf;
     };
+
+    programs.git = {
+      enable = true;
+      userName = "Leon Etienne";
+      userEmail = "me@leonetienne.de";
+      extraConfig = {
+        core.editor = "nvim";
+      };
+    };
   };
 }
