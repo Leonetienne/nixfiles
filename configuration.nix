@@ -12,6 +12,7 @@ in
       ./localize.nix
       ./networking.nix
       ./audio.nix
+      ./bluetooth.nix
       ./swaylock.nix
       ./packages.nix
       ./env.nix
