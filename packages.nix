@@ -36,5 +36,6 @@
     dig
     xdg-utils
     htop
+    tldr
   ];
 }
