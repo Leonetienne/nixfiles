@@ -5,6 +5,7 @@
   [ 
     ./git.nix
     ./nvim.nix
+    ./firefox.nix
   ];
 
    nixpkgs.config.allowUnfree = true;
