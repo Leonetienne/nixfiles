@@ -55,6 +55,7 @@ tooltip {
 #custom-gpu_perc,
 #custom-gpu_mem,
 #custom-gpu_temp,
+#custom-gpu_power,
 #custom-power_profile,
 #memory,
 #cpu,
@@ -86,11 +87,14 @@ tooltip {
 #custom-gpu_perc {
     color: #aac8a7;
 }
-#custom-gpu_mem {
+#custom-gpu_power {
     color: #a7c8af;
 }
-#custom-gpu_temp {
+#custom-gpu_mem {
     color: #a7c8c0;
+}
+#custom-gpu_temp {
+    color: #a7c8c8;
 }
 #cpu {
     color: #ffcc99;

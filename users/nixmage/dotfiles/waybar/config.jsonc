@@ -8,7 +8,9 @@
     "height": 30,
     "modules-left": ["clock", "custom/storage", "custom/docker_containers" ],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/gpu_perc", "custom/gpu_mem", "custom/gpu_temp", "cpu", "memory", "temperature","custom/power_profile","battery","backlight","pulseaudio","tray"],
+    "modules-right": ["custom/gpu_perc", "custom/gpu_power", "custom/gpu_mem", "custom/gpu_temp", "cpu", "memory", "temperature","custom/power_profile","battery","backlight","pulseaudio","tray"],
+
+    // Icons: https://www.nerdfonts.com/cheat-sheet
 
     "hyprland/window": {
         "format": "{}"
@@ -16,7 +18,7 @@
 
     "custom/storage": {
         "exec": "df -h / | awk 'NR==2{print $5}'",
-        "format": "\uf1c0 : {}",
+        "format": "\uf1c0 : {:0.1f}",
         "interval": 5
     },
 
@@ -24,6 +26,12 @@
         "exec": "docker ps -q | wc -l",
         "format": "\udb82\udc68 : {}",
         "interval": 10
+    },
+
+    "custom/gpu_power": {
+        "exec": "nvidia-smi --query-gpu=power.draw --format=csv | tail -n 1 | cut -d'.' -f1",
+        "format": "GPU \udb80\ude41 : {}W",
+        "interval": 1
     },
 
     "custom/gpu_temp": {
