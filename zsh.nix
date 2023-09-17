@@ -7,6 +7,7 @@
     shellAliases = {
       ll = "ls -l";
       nix-update = "sudo nixos-rebuild switch -I nixos-config=/etc/nixos/master.nix";
+      nix = "nix --extra-experimental-features";
       gda = "git add --all";
       gst = "git status";
       gcm = "git commit -m";
