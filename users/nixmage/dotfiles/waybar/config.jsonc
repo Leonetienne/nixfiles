@@ -6,52 +6,58 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 30,
-    "modules-left": ["clock"],
+    "modules-left": ["clock", "custom/storage", "custom/docker_containers" ],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/docker_containers", "custom/gpu_perc", "custom/gpu_mem", "custom/gpu_temp", "cpu", "memory", "temperature","custom/power_profile","battery","backlight","pulseaudio","tray"],
+    "modules-right": ["custom/gpu_perc", "custom/gpu_mem", "custom/gpu_temp", "cpu", "memory", "temperature","custom/power_profile","battery","backlight","pulseaudio","tray"],
 
     "hyprland/window": {
         "format": "{}"
     },
 
+    "custom/storage": {
+        "exec": "df -h / | awk 'NR==2{print $5}'",
+        "format": "\uf1c0 : {}",
+        "interval": 30
+    },
+
     "custom/docker_containers": {
         "exec": "docker ps -q | wc -l",
-        "format": "Containers: {}",
+        "format": "\udb82\udc68 : {}",
         "interval": 10
     },
 
     "custom/gpu_temp": {
         "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv | tail -n 1",
-        "format": "GPU Temp: {}°C",
+        "format": "GPU \udb80\ude38 : {}°C",
         "interval": 1
     },
 
     "custom/gpu_perc": {
         "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv | tail -n 1",
-        "format": "GPU: {}",
+        "format": "GPU \udb83\udfd7 : {}",
         "interval": 1
     },
 
     "custom/gpu_mem": {
         "exec": "nvidia-smi --query-gpu=memory.used --format=csv | tail -n 1",
-        "format": "GPU Mem: {}",
+        "format": "GPU \uf4bc : {}",
         "interval": 1
     },
 
     "memory": {
         "interval": "1",
-        "format": "Mem: {used:0.1f} GiB"
+        "format": "CPU \uf4bc : {used:0.1f} GiB"
     },
 
     "cpu": {
-        "format": "CPU: {} %"
+        "format": "CPU \udb83\udfd7 : {} %"
     },
 
     "temperature": {
-        "format": "Temp: {}°C"
+        "format": "CPU \udb80\ude38 : {}°C"
     },
 
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",

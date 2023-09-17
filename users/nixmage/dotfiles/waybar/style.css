@@ -50,6 +50,7 @@ tooltip {
     border-radius: 20px;
 }
 
+#custom-storage,
 #custom-docker_containers,
 #custom-gpu_perc,
 #custom-gpu_mem,
@@ -76,6 +77,9 @@ tooltip {
     border-radius: 20px;
 }
 
+#custom-storage {
+    color: #ccccff;
+}
 #custom-docker_containers {
     color: #66ccff;
 }
