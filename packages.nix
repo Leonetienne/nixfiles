@@ -10,32 +10,29 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    dracula-theme
-    glib
-    gsettings-desktop-schemas
     curl
     vim
     git
     firefox
-    kitty
-    nvtop
-    tmux wofi
-    swaybg
-    swaylock-effects
-    waybar
-    wl-clipboard
-    mako
-    imv
-    mpv
-    lsix
-    pavucontrol
-    pamixer
-    neofetch
-    grim
-    slurp
+    kitty            # Terminal emulator
+    nvtop            # Nvidia top
+    tmux
+    wofi             # Application launcher
+    swaybg           # Wallpaper
+    swaylock-effects # Screen locker
+    waybar           # Status bar
+    wl-clipboard     # Clipboard cli
+    mako             # Notification daemon
+    imv              # The best image viewer
+    mpv              # The best media player
+    pavucontrol      # Gui to modify sound vol. per app
+    pamixer          # Cli to modify global volume
+    neofetch         # Must have, for additional swag
+    grim             # Screenshot util
+    slurp            # Screen area selector (mainly for grim)
     dig
-    xdg-utils
+    xdg-utils        # xdg-open and co.
     htop
-    tldr
+    tldr             # Usage examples for cli tools
   ];
 }

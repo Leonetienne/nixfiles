@@ -1,1 +1,1 @@
-Put user configurations in this directory.
+User specific configurations, managed by home-manager
