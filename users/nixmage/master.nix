@@ -26,6 +26,7 @@
       ".config/swaylock/config".source = dotfiles/swaylock.conf;
       ".config/waybar/config.jsonc".source = dotfiles/waybar/config.jsonc;
       ".config/waybar/style.css".source = dotfiles/waybar/style.css;
+      ".zshrc".source = dotfiles/zshrc;
       "Wallpapers/space-0.jpg".source = other-files/wallpaper.jpg;
     };
   };
