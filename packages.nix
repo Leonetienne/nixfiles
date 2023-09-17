@@ -34,5 +34,8 @@
     xdg-utils        # xdg-open and co.
     htop
     tldr             # Usage examples for cli tools
+    gnumake
+    cmake
+    gnome.nautilus   # A file explorer, to sieve through images and videos
   ];
 }
