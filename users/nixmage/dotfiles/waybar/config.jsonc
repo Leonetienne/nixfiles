@@ -8,10 +8,16 @@
     "height": 30,
     "modules-left": ["clock"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/gpu_temp", "custom/gpu_perc", "custom/gpu_mem", "memory", "cpu", "temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray"],
+    "modules-right": ["custom/docker_containers", "custom/gpu_perc", "custom/gpu_mem", "custom/gpu_temp", "cpu", "memory", "temperature","custom/power_profile","battery","backlight","pulseaudio","tray"],
 
     "hyprland/window": {
         "format": "{}"
+    },
+
+    "custom/docker_containers": {
+        "exec": "docker ps -q | wc -l",
+        "format": "Containers: {}",
+        "interval": 10
     },
 
     "custom/gpu_temp": {
@@ -33,11 +39,12 @@
     },
 
     "memory": {
-        "format": "Mem: {}%"
+        "interval": "1",
+        "format": "Mem: {used:0.1f} GiB"
     },
 
     "cpu": {
-        "format": "CPU: {}%"
+        "format": "CPU: {} %"
     },
 
     "temperature": {

@@ -23,7 +23,6 @@
     swaybg
     swaylock-effects
     waybar
-    font-awesome
     wl-clipboard
     mako
     imv
@@ -36,5 +35,6 @@
     slurp
     dig
     xdg-utils
+    htop
   ];
 }

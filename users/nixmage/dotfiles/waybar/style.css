@@ -3,7 +3,7 @@
     border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 11px;
+    font-size: 14px;
     min-height: 0;
     transition: 0.3s;
 }
@@ -50,6 +50,7 @@ tooltip {
     border-radius: 20px;
 }
 
+#custom-docker_containers,
 #custom-gpu_perc,
 #custom-gpu_mem,
 #custom-gpu_temp,
@@ -72,27 +73,29 @@ tooltip {
     margin: 0;
     margin-top: 5px;
     border: 1px solid #181825;
+    border-radius: 20px;
 }
 
-#custom-gpu_mem {
-    color: #FFB8DE;
-}
-#custom-gpu_temp {
-    color: #D291BC;
-}
-#memory {
-    color: #A6DDD7;
-}
-#cpu {
-    color: #FFDFD3;
+#custom-docker_containers {
+    color: #66ccff;
 }
 #custom-gpu_perc {
-    color: #E0BBE4;
+    color: #aac8a7;
 }
-
-
+#custom-gpu_mem {
+    color: #a7c8af;
+}
+#custom-gpu_temp {
+    color: #a7c8c0;
+}
+#cpu {
+    color: #ffcc99;
+}
+#memory {
+    color: #ffb399;
+}
 #temperature {
-    border-radius: 20px 0px 0px 20px;
+    color: #ff9999;
 }
 
 #temperature.critical {
