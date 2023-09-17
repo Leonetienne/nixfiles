@@ -16,6 +16,8 @@
       giff = "git diff";
       gog = "git log";
       open = "xdg-open";
+      icat = "kitty +kitten icat";
+      ssh = "kitty +kitten ssh";
     };
 
     histSize = 1000000;
