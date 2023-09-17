@@ -18,7 +18,7 @@
 
     "custom/storage": {
         "exec": "df -h / | awk 'NR==2{print $5}'",
-        "format": "\uf1c0 : {:0.1f}",
+        "format": "\uf1c0 : {}",
         "interval": 5
     },
 
