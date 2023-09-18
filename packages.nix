@@ -36,6 +36,7 @@
     tldr             # Usage examples for cli tools
     gnumake
     cmake
+    gcc
     gnome.nautilus   # A file explorer, to sieve through images and videos
   ];
 }
