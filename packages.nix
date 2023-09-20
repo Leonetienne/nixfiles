@@ -37,6 +37,7 @@
     gnumake
     cmake
     gcc
+    zathura          # An actually good pdf viewer
     gnome.nautilus   # A file explorer, to sieve through images and videos
   ];
 }
