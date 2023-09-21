@@ -42,5 +42,6 @@
     ffmpeg
     wf-recorder      # A simple screen recorder util
     cowsay
+    rsync
   ];
 }
