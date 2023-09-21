@@ -18,6 +18,7 @@
       open = "xdg-open";
       icat = "kitty +kitten icat";
       ssh = "kitty +kitten ssh";
+      wl-recorder = "wf-recorder"; # It's wayland, not wayfant!
     };
 
     histSize = 1000000;
