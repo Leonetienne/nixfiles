@@ -24,6 +24,7 @@ in
       ./docker.nix
       ./ddev.nix
       ./users/nixmage/master.nix
+      ./users/agent/master.nix
       ./scripts/master.nix
     ];
 

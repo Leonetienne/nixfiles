@@ -1,0 +1,6 @@
+eval $(ssh-agent)
+ssh-add -L
+bindkey -v
+unsetopt BEEP
+unsetopt LIST_BEEP
+
