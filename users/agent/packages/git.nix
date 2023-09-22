@@ -7,6 +7,7 @@
     userEmail = "etienne@medienagenten.de";
     extraConfig = {
       core.editor = "nvim";
+      init.defaultBranch = "master";
     };
   };
 }

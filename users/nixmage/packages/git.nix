@@ -7,6 +7,7 @@
     userEmail = "me@leonetienne.de";
     extraConfig = {
       core.editor = "nvim";
+      init.defaultBranch = "master";
     };
   };
 }
