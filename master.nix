@@ -18,6 +18,7 @@ in
       ./packages.nix
       ./env.nix
       ./zsh.nix
+      ./python.nix
       ./nvidia-drivers.nix
       ./hyprland.nix
       ./gnupg.nix
