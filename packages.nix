@@ -43,6 +43,7 @@
     wf-recorder      # A simple screen recorder util
     cowsay
     rsync
-    file	     # Analyze a files type
+    file	           # Analyze a files type
+    figlet           # Big letters as ascii art
   ];
 }
